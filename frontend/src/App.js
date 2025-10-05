@@ -39,6 +39,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/verify/:token" element={<VerifyEmail />} />
+          <Route path="/user-credentials" element={<UserCredentials />} />
 
           <Route path="/dashboard" element={<LearnerDashboard />}>
             <Route index element={<Courses />} />
@@ -47,7 +48,6 @@ function App() {
             <Route path="certificate/:courseId" element={<Certificate />} />
             <Route path="apply" element={<CreatorApply />} />
             <Route path="profile" element={<Profile />} />
-            <Route path="/user-credentials" element={<UserCredentials />} />
           </Route>
 
           <Route path="/creator/dashboard" element={<CreatorDashboard />}>
