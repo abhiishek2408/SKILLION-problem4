@@ -6,6 +6,7 @@ import LearnerDashboard from "./pages/LearnerDashboard";
 import Courses from "./pages/Courses";
 import CourseDetail from "./pages/CourseDetail";
 import Certificate from "./pages/Certificate";
+import UserCredentials from "./pages/UserCredentials";
 
 import CreatorCourses from "./pages/CreatorCourses";
 import CreatorLession from "./pages/CreatorLession";
@@ -46,6 +47,7 @@ function App() {
             <Route path="certificate/:courseId" element={<Certificate />} />
             <Route path="apply" element={<CreatorApply />} />
             <Route path="profile" element={<Profile />} />
+            <Route path="/user-credentials" element={<UserCredentials />} />
           </Route>
 
           <Route path="/creator/dashboard" element={<CreatorDashboard />}>

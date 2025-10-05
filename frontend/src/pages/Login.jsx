@@ -85,6 +85,14 @@ function Login() {
             Register here
           </Link>
         </p>
+
+      <p>
+        Need test credentials?{" "}
+        <Link to="/user-credentials" style={{ color: "blue", textDecoration: "underline" }}>
+          Click here
+        </Link>
+      </p>
+
       </div>
     </div>
   );
