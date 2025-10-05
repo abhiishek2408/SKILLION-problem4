@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 
-const API_BASE = "http://localhost:3000/api";
+const API_BASE = "https://skillion-problem4.onrender.com/api";
 
 const CourseDetail = () => {
   const { id } = useParams();

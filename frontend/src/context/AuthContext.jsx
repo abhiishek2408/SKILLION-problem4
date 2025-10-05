@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 const AuthContext = createContext();
-const API_URL = "http://localhost:3000/api/auth";
+const API_URL = "https://skillion-problem4.onrender.com/api/auth";
 
 export const AuthProvider = ({ children }) => {
   const navigate = useNavigate();

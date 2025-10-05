@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const API_BASE = "http://localhost:3000/api/lessions";
+const API_BASE = "https://skillion-problem4.onrender.com/api/lessions";
 
 const CreatorLesson = () => {
   const [lessons, setLessons] = useState([]);

@@ -10,7 +10,7 @@ function Progress() {
     const fetchProgress = async () => {
       try {
         const token = localStorage.getItem("token"); // if using JWT
-        const res = await axios.get("http://localhost:3000/api/progress", {
+        const res = await axios.get("https://skillion-problem4.onrender.com/api/progress", {
           headers: token ? { Authorization: `Bearer ${token}` } : {},
         });
         setProgress(res.data.items || []);

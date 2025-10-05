@@ -4,7 +4,7 @@ import axios from "axios";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 
-const API_BASE = "http://localhost:3000/api";
+const API_BASE = "https://skillion-problem4.onrender.com/api";
 
 const Certificate = () => {
   const { courseId } = useParams();

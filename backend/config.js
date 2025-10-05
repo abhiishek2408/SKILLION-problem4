@@ -13,5 +13,5 @@ export default {
     pass: process.env.SMTP_PASS
   },
   transcriptApiKey: process.env.TRANSCRIPT_API_KEY || null,
-  frontendUrl: "http://localhost:3000"
+  frontendUrl: "https://skillion-problem4.vercel.app/"
 };

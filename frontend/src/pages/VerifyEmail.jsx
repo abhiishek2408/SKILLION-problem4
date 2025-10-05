@@ -15,7 +15,7 @@
 //       }
 
 //       try {
-//         const backendUrl = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000";
+//         const backendUrl = process.env.REACT_APP_BACKEND_URL || "https://skillion-problem4.onrender.com";
 //         const res = await axios.get(`${backendUrl}/api/auth/verify/${token}`);
 
 //         setStatus(res.data.message || "Email verified! You can now login.");
@@ -68,7 +68,7 @@ function VerifyEmail() {
       }
 
       try {
-        const backendUrl = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000";
+        const backendUrl = process.env.REACT_APP_BACKEND_URL || "https://skillion-problem4.onrender.com";
         const res = await axios.get(`${backendUrl}/api/auth/verify/${token}`);
 
         setStatus(res.data.message || "Email verified! You can now login.");

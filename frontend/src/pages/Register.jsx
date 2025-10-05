@@ -21,7 +21,7 @@ function Register() {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:3000/api/auth/register", form);
+      const res = await axios.post("https://skillion-problem4.onrender.com/api/auth/register", form);
 
       // Safe access with optional chaining
       const userEmail = res.data.user?.email || form.email;
@@ -51,7 +51,7 @@ function Register() {
     if (!form.email) return;
     setLoading(true);
     try {
-      const res = await axios.post("http://localhost:3000/api/auth/resend-verification", { email: form.email });
+      const res = await axios.post("https://skillion-problem4.onrender.com/api/auth/resend-verification", { email: form.email });
       setMessage(`✅ Verification email resent to ${form.email}.`);
       setIsError(false);
       console.log("✅ Resend email response:", res.data);
